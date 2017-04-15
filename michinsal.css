@@ -5,11 +5,10 @@ html,body{
 
 .audio{
   color: #fff;
-  font-size: 30px;
+  font-size: 40px;
   position: absolute;
-  z-index: 99;
-  right: 50px;
-  bottom: 50px;
+  z-index: 9999;
+ 
 }
 @media (min-width: 489px) {
       body *{
