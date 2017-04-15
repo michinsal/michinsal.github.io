@@ -3,17 +3,25 @@ html,body{
 		height: 100%;
 }
 
-	@media (min-width: 489px) {
-        body *{
-            display: none;
-        }
-        body{
-            background: url(https://michinsal.github.io/michinsal.png) center center;
-            background-size: cover;
-            margin: 0;
-            padding: 0;
-        }
-    }
+@media (min-width: 489px) {
+      body *{
+          display: none;
+      }
+      body{
+          background: url(https://michinsal.github.io/michinsal.png) center center;
+          background-size: cover;
+          margin: 0;
+          padding: 0;
+      }
+      body:before{
+        content: "PC는 지원하지 않습니다.";
+        background: yellow;
+        
+      }
+  }
+
+
+
     @media (max-width: 480px) {
     body {
         background: url(http://cfile21.uf.tistory.com/image/22080A4058F1D84D2A14A6) center center no-repeat;
