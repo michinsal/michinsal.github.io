@@ -7,18 +7,8 @@ $(document).ready(function() {
 	audio.volume = 0.2;
 
 	    
-	$('body').on('click','.audio',function() {
+	
 
-	  if (audio.paused == false) {
-	      audio.pause();
-
-	  } else {
-	      audio.play();
-	  }
-
-	  $('.audio i').toggleClass('xi-volume-off xi-volume-up');
-
-	});
 	$('body').on('click','.player',function() {
 
 	  if (audio.paused == false) {
@@ -27,7 +17,7 @@ $(document).ready(function() {
 	  } else {
 	      audio.play();
 	  }
-
+	  $('.audio i').toggleClass('xi-volume-off xi-volume-up');
 
 	});
 
