@@ -355,9 +355,19 @@
   src="https://code.jquery.com/jquery-1.12.4.min.js"
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
   crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
 <script src="pace.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+
      <script>
+    $(document).ready(function() {
+
+            $(function() {
+                Pace.on("done", function(){
+                    $(".swiper-container ").css("opacity","1");
+                });
+            });
+
+    });
 
      var divs = $(".swiper-slide").get().sort(function(){ 
       return Math.round(Math.random())-0.5; //random so we get the right +/- combo
@@ -377,22 +387,14 @@
         parallax: true
     });
     
-    $(document).ready(function() {
-
-            $(function() {
-                Pace.on("done", function(){
-                    $(".swiper-container ").css("opacity","1");
-                });
-            });
-
-    });
+    
 
 
 
     </script>
 
 
-    
+
 
 </head>
 <body>
