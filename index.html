@@ -147,6 +147,12 @@
                 <img src="shadow.png" alt="" class="shadow">
             </div>
             <div class="swiper-slide">
+                <h2 class="name">SONG<BR>YONG HWA</h2>
+                <h3 class="backnumber">99</h3>
+                <img src="99.png" alt="" class="player">
+                <img src="shadow.png" alt="" class="shadow">
+            </div>
+            <div class="swiper-slide">
                 <h2 class="name">LEE<BR>JUNG IN</h2>
                 <h3 class="backnumber">12</h3>
                 <img src="12.png" alt="" class="player">
@@ -158,12 +164,7 @@
                 <img src="17.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">
-                <h2 class="name">SONG<BR>YONG HWA</h2>
-                <h3 class="backnumber">99</h3>
-                <img src="99.png" alt="" class="player">
-                <img src="shadow.png" alt="" class="shadow">
-            </div>
+            
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -175,8 +176,8 @@
 <script type="text/javascript">
     
     var divs = $(".swiper-slide").get().sort(function(){ 
-      return Math.round(Math.random())-0.7; //random so we get the right +/- combo
-    }).slice(0,27)
+      return Math.round(Math.random())-0.5; //random so we get the right +/- combo
+    }).slice(0,17)
     $(divs).appendTo(divs[0].parentNode).show();
 
 
