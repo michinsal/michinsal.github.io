@@ -7,7 +7,8 @@ audio.play();
 audio.volume = 0.2;
 
     
-$('.xi-volume-off').click(function() {
+$('body').on('click','.xi-volume-off',function() {
+
   if (audio.paused == false) {
       audio.pause();
 
@@ -15,10 +16,15 @@ $('.xi-volume-off').click(function() {
       audio.play();
   }
   $('.audio i').toggleClass('xi-volume-off xi-volume-up');
+
+});
+
+
+
 });
 
 
 
-});
+
 
 
