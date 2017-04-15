@@ -3,6 +3,12 @@ html,body{
 		height: 100%;
 }
 
+.audio{
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  z-index: 9;
+}
 @media (min-width: 489px) {
       body *{
           display: none;
@@ -16,7 +22,7 @@ html,body{
       body:before{
         content: "PC는 지원하지 않습니다.";
         background: yellow;
-        
+
       }
   }
 
