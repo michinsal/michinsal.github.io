@@ -65,16 +65,16 @@
     }
     .swiper-slide.swiper-slide-prev{
         transform: skew(0deg,-2deg) translate(50px,-10px) scale(0.8, 0.8);
-        filter: blur(2px);
+        filter: blur(2px) grayscale(70%);
     }
     .swiper-slide.swiper-slide-active{
         transform: skew(0,0) translate(0,0) scale(1.2, 1.2);
-        filter: blur(0px);
+        filter: blur(0px) grayscale(0%);
         z-index: 1;
     }
     .swiper-slide.swiper-slide-next{
         transform: skew(0deg,2deg) translate(-50px,-10px) scale(0.8, 0.8);
-        filter: blur(2px);
+        filter: blur(2px) grayscale(70%);
     }
     .swiper-container-horizontal>.swiper-pagination-progress{
         bottom: 0;
