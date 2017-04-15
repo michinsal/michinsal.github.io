@@ -351,6 +351,49 @@
     </style>
 
 
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+<script src="pace.min.js"></script>
+     <script>
+
+     var divs = $(".swiper-slide").get().sort(function(){ 
+      return Math.round(Math.random())-0.5; //random so we get the right +/- combo
+    }).slice(0,17)
+    $(divs).appendTo(divs[0].parentNode).show();
+
+
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationType: 'progress',
+        parallax: true
+    });
+    
+    $(document).ready(function() {
+
+            $(function() {
+                Pace.on("done", function(){
+                    $(".swiper-container ").css("opacity","1");
+                });
+            });
+
+    });
+
+
+
+    </script>
+
+
+    
+
 </head>
 <body>
 
@@ -468,45 +511,7 @@
     </div>
 
 
-<script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
-<script src="pace.min.js"></script>
-     <script>
 
-     var divs = $(".swiper-slide").get().sort(function(){ 
-	  return Math.round(Math.random())-0.5; //random so we get the right +/- combo
-	}).slice(0,17)
-	$(divs).appendTo(divs[0].parentNode).show();
-
-
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        paginationType: 'progress',
-        parallax: true
-    });
-    
-    $(document).ready(function() {
-
-            $(function() {
-                Pace.on("done", function(){
-                    $(".swiper-container ").css("opacity","1");
-                });
-            });
-
-    });
-
-
-
-    </script>
 
 </body>
 
