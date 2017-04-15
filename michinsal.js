@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 var source = "https://michinsal.github.io/bgm.mp3"
 var audio = document.createElement("audio");
 audio.src = source;
@@ -14,3 +16,9 @@ $('.xi-volume-off').click(function() {
   }
   $('.audio i').toggleClass('xi-volume-off xi-volume-up');
 });
+
+
+
+});
+
+
