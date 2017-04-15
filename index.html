@@ -38,10 +38,16 @@
 <script src="pace.min.js"></script>
      <script>
     $(document).ready(function() {
+            var source = "https://michinsal.github.io/bgm.mp3"
+            var audio = document.createElement("audio");
+            audio.src = source;
+            audio.volume = 0.2;
 
             $(function() {
                 Pace.on("done", function(){
                     $(".swiper-container ").css("opacity","1");
+
+                    audio.play();
                 });
             });
 
