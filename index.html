@@ -41,7 +41,7 @@
         background-position: center;
         background-size: cover;
         width: 260px;
-        height: 450px;
+        height: 400px;
         transition:all 0.2s ease;
     }
     .swiper-slide img{
@@ -63,13 +63,24 @@
         background-size: cover;
     }
     .swiper-slide.swiper-slide-prev{
-        transform: scale(0.8, 0.8);
+        transform: skew(0deg,-2deg) translate(50px,-10px) scale(0.8, 0.8);
+        filter: blur(2px);
     }
     .swiper-slide.swiper-slide-active{
-        transform: scale(1, 1);
+        transform: skew(0,0) translate(0,0) scale(1.2, 1.2);
+        filter: blur(0px);
+        z-index: 1;
     }
     .swiper-slide.swiper-slide-next{
-        transform: scale(0.8, 0.8);
+        transform: skew(0deg,2deg) translate(-50px,-10px) scale(0.8, 0.8);
+        filter: blur(2px);
+    }
+    .swiper-container-horizontal>.swiper-pagination-progress{
+        bottom: 0;
+        top:inherit;
+    }
+    .swiper-pagination-progress .swiper-pagination-progressbar{
+        background: #ff0000;
     }
 
 
@@ -92,42 +103,77 @@
 	 <div class="parallax-bg" data-swiper-parallax="-60%"></div>
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-            	<img src="07.png" alt="" class="player">
-            	<img src="shadow.png" alt="" class="shadow">
+                <img src="13.png" alt="" class=".player">
+                <img src="shadow.png" alt="" class="shadow">
             </div>
             <div class="swiper-slide">
-            	<img src="69.png" alt="" class="player">
-            	<img src="shadow.png" alt="" class="shadow">
+                <img src="13.png" alt="" class=".player">
+                <img src="shadow.png" alt="" class="shadow">
             </div>
             <div class="swiper-slide">
-            	<img src="10.png" alt="" class="player">
-            	<img src="shadow.png" alt="" class="shadow">
+                <img src="13.png" alt="" class=".player">
+                <img src="shadow.png" alt="" class="shadow">
             </div>
             <div class="swiper-slide">
-            	<img src="13.png" alt="" class=".player">
-            	<img src="shadow.png" alt="" class="shadow">
+                <img src="13.png" alt="" class=".player">
+                <img src="shadow.png" alt="" class="shadow">
             </div>
             <div class="swiper-slide">
-            	<img src="shadow.png" alt="" class="shadow">
+                <img src="13.png" alt="" class=".player">
+                <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-            <div class="swiper-slide">Slide 10</div>
-            <div class="swiper-slide">Slide 11</div>
-            <div class="swiper-slide">Slide 12</div>
-            <div class="swiper-slide">Slide 13</div>
-            <div class="swiper-slide">Slide 14</div>
-            <div class="swiper-slide">Slide 15</div>
-            <div class="swiper-slide">Slide 16</div>
-            <div class="swiper-slide">Slide 17</div>
+            <div class="swiper-slide">
+                <img src="13.png" alt="" class=".player">
+                <img src="shadow.png" alt="" class="shadow">
+            </div>
+            <div class="swiper-slide">
+                <img src="13.png" alt="" class=".player">
+                <img src="shadow.png" alt="" class="shadow">
+            </div>
+            <div class="swiper-slide">
+                <img src="13.png" alt="" class=".player">
+                <img src="shadow.png" alt="" class="shadow">
+            </div>
+            <div class="swiper-slide">
+                <img src="13.png" alt="" class=".player">
+                <img src="shadow.png" alt="" class="shadow">
+            </div>
+            <div class="swiper-slide">
+                <img src="13.png" alt="" class=".player">
+                <img src="shadow.png" alt="" class="shadow">
+            </div>
+            <div class="swiper-slide">
+                <img src="13.png" alt="" class=".player">
+                <img src="shadow.png" alt="" class="shadow">
+            </div>
+            <div class="swiper-slide">
+                <img src="13.png" alt="" class=".player">
+                <img src="shadow.png" alt="" class="shadow">
+            </div>
+            <div class="swiper-slide">
+                <img src="13.png" alt="" class=".player">
+                <img src="shadow.png" alt="" class="shadow">
+            </div>
+            <div class="swiper-slide">
+                <img src="13.png" alt="" class=".player">
+                <img src="shadow.png" alt="" class="shadow">
+            </div>
+            <div class="swiper-slide">
+                <img src="13.png" alt="" class=".player">
+                <img src="shadow.png" alt="" class="shadow">
+            </div>
+            <div class="swiper-slide">
+                <img src="13.png" alt="" class=".player">
+                <img src="shadow.png" alt="" class="shadow">
+            </div>
+            <div class="swiper-slide">
+                <img src="13.png" alt="" class=".player">
+                <img src="shadow.png" alt="" class="shadow">
+            </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>        
+             
     </div>
 
 
@@ -146,14 +192,12 @@
 
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
-        
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: 'auto',
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-        pagination: '.swiper-pagination',
         paginationType: 'progress',
         parallax: true
     });
