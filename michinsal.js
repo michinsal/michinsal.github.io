@@ -16,8 +16,6 @@ $('body').on('click','.audio',function() {
       audio.play();
   }
 
-  $('.audio i').toggleClass('xi-volume-off xi-volume-up');
-
 });
 
 
