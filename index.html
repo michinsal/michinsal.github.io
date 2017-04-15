@@ -16,10 +16,8 @@
 	}
 	@media (max-width: 480px) {
     body {
-        background: #fff;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color:#000;
+        background: url(sbg.jpg) center center no-repeat;
+        background-size: cover;
         margin: 0;
         padding: 0;
     }
@@ -106,7 +104,7 @@
         font-size: 70px;
         position: absolute;
         right: 0;
-        top: 0;
+        top: -20px;
         margin: 0;
         opacity: 0;
         transition:all 0.3s ease;
@@ -149,11 +147,11 @@
   z-index: 2000;
   position: fixed;
   margin: auto;
-  top: 12px;
+  top: 180px;
   left: 0;
   right: 0;
   bottom: 0;
-  width: 200px;
+  width: 180px;
   height: 50px;
   overflow: hidden;
 }
@@ -164,10 +162,6 @@
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
 
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
@@ -182,11 +176,11 @@
   margin-right: -7px;
   width: 93%;
   top: 7px;
-  height: 14px;
+  height: 5px;
   font-size: 12px;
-  background: #29d;
-  color: #29d;
-  line-height: 60px;
+  background: #ff0000;
+  color: #fff;
+  line-height: 32px;
   font-weight: bold;
   font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
 
@@ -314,8 +308,6 @@
   width: 100%;
   height: 28px;
   z-index: 2001;
-  box-shadow: inset 0 0 0 2px #29d, inset 0 0 0 7px #FFF;
-  border-radius: 10px;
 }
 
 .pace.pace-inactive {
