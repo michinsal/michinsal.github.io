@@ -7,7 +7,7 @@ $(document).ready(function() {
 	audio.volume = 0.2;
 
 	    
-	$('body').on('click','.audio',function() {
+	$('body').on('click','.audio i',function() {
 
 	  if (audio.paused == false) {
 	      audio.pause();
