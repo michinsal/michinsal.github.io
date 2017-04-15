@@ -121,11 +121,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
      <script>
 
-     var divs = $(".swiper-slide").get().sort(function(){ 
-	  return Math.round(Math.random())-0.5; //random so we get the right +/- combo
-	}).slice(0,17)
-	$(divs).appendTo(divs[0].parentNode).show();
-
+   
 
     var swiper = new Swiper('.swiper-container', {
         effect: 'coverflow',
