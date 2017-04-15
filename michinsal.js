@@ -1,28 +1,28 @@
-$(document).ready(function() {
 
-var source = "https://michinsal.github.io/bgm.mp3"
-var audio = document.createElement("audio");
-audio.src = source;
-audio.play();    
-audio.volume = 0.2;
+
+$(document).ready(function() {
+	var source = "http://www.brosu.com/music/brosu.mp3"
+    var audio = document.createElement("audio");
+    audio.src = source;
+    audio.loop = true;
+    
+    
+	
+	$('body').on('click','.audio',function() {
+  	
+  	  if (audio.paused == false) {
+        audio.pause();
+  	  } else {
+        audio.play();
+  	  }
+  	  
+	});
+	
+    
+    
 
     
-$('body').on('click','.xi-volume-off',function() {
-
-  if (audio.paused == false) {
-      audio.pause();
-
-  } else {
-      audio.play();
-  }
-  $('.audio i').toggleClass('xi-volume-off xi-volume-up');
-
 });
-
-
-
-});
-
 
 
 
