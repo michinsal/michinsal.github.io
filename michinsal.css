@@ -8,6 +8,8 @@ html,body{
   font-size: 30px;
   position: absolute;
   z-index: 9;
+  right: 50px;
+  bottom: 50px;
 }
 @media (min-width: 489px) {
       body *{
