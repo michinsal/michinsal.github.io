@@ -11,12 +11,11 @@ html,body{
   right: 40px;
   bottom: 80px
 }
-.audio i{
+.audio a{
   color: #fff;
   font-size: 40px;
   position: absolute;
   z-index: 9999;
- 
 }
 @media (min-width: 489px) {
       body *{

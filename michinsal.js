@@ -9,19 +9,9 @@ $(document).ready(function() {
 	    
 	
 
-	$('body').on('click','.player',function() {
+	
 
-	  if (audio.paused == false) {
-	      audio.pause();
-
-	  } else {
-	      audio.play();
-	  }
-	  $('.audio i').toggleClass('xi-volume-off xi-volume-up');
-
-	});
-
-	$('body').on('click','.audio',function() {
+	$('body').on('click','.audio a',function() {
 
 	  if (audio.paused == false) {
 	      audio.pause();
