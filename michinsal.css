@@ -8,12 +8,12 @@ html,body{
   width: 40px;
   height: 40px;
   z-index: 9999;
-  right: 40px;
-  bottom: 80px
+  right: 30px;
+  bottom: 30px
 }
 .audio a{
   color: #fff;
-  font-size: 40px;
+  font-size: 50px;
   position: absolute;
   z-index: 9999;
 }
