@@ -64,107 +64,110 @@
 <div class="swiper-container">
 	 <div class="parallax-bg" data-swiper-parallax="-60%"></div>
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide random">
                 <h2 class="name">KIM<BR>MYUNG HUN</h2>
                 <h3 class="backnumber">13</h3>
                 <img src="13.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide random">
                 <h2 class="name">PARK<BR>HYEONG JIN</h2>
                 <h3 class="backnumber">11</h3>
                 <img src="11.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide random">
                 <h2 class="name">OH<BR>JUN HEE</h2>
                 <h3 class="backnumber">18</h3>
                 <img src="18.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide random">
                 <h2 class="name">LEE<BR>GEON WOO</h2>
                 <h3 class="backnumber">02</h3>
                 <img src="02.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide random">
                 <h2 class="name">LEE<BR>MAN SEOP</h2>
                 <h3 class="backnumber">69</h3>
                 <img src="69.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide random">
                 <h2 class="name">LEE<BR>BO SAM</h2>
                 <h3 class="backnumber">32</h3>
                 <img src="32.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide random">
                 <h2 class="name">LEE<BR>CHOONG JAE</h2>
                 <h3 class="backnumber">08</h3>
                 <img src="08.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide random">
                 <h2 class="name">CHOI<BR>DONG HYEOK</h2>
                 <h3 class="backnumber">10</h3>
                 <img src="10.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide random">
                 <h2 class="name">CHOI<BR>YONG HWA</h2>
                 <h3 class="backnumber">33</h3>
                 <img src="33.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide random">
                 <h2 class="name">IM<BR>HYUCK GYUN</h2>
                 <h3 class="backnumber">38</h3>
                 <img src="38.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide random">
                 <h2 class="name">JANG<BR>BYUNG HEE</h2>
                 <h3 class="backnumber">09</h3>
                 <img src="09.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide random">
                 <h2 class="name">KANG<BR>SUNG UK</h2>
                 <h3 class="backnumber">14</h3>
                 <img src="14.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide random">
                 <h2 class="name">KIM<BR>JONG CHEOL</h2>
                 <h3 class="backnumber">07</h3>
                 <img src="07.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide random">
                 <h2 class="name">SEO<BR>HYEON MIN</h2>
                 <h3 class="backnumber">03</h3>
                 <img src="03.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide random">
                 <h2 class="name">SONG<BR>YONG HWA</h2>
                 <h3 class="backnumber">99</h3>
                 <img src="99.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide random">
                 <h2 class="name">LEE<BR>JUNG IN</h2>
                 <h3 class="backnumber">12</h3>
                 <img src="12.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide random">
                 <h2 class="name">KIM<BR>HYE SEONG</h2>
                 <h3 class="backnumber">17</h3>
                 <img src="17.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
+            </div>
+            <div class="swiper-slide adv">
+                
             </div>
             
         </div>
@@ -177,7 +180,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
 <script type="text/javascript">
     
-    var divs = $(".swiper-slide").get().sort(function(){ 
+    var divs = $(".swiper-slide.random").get().sort(function(){ 
       return Math.round(Math.random())-0.5; //random so we get the right +/- combo
     }).slice(3,20)
     $(divs).appendTo(divs[0].parentNode).show();
