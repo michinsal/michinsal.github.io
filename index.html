@@ -180,9 +180,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
 <script type="text/javascript">
     
-    var divs = $(".random").get().sort(function(){ 
+    var divs = $(".swiper-slide").get().sort(function(){ 
       return Math.round(Math.random())-0.5; //random so we get the right +/- combo
-    }).slice(19,40)
+    }).slice(3,20)
     $(divs).appendTo(divs[0].parentNode).show();
 
 
