@@ -24,7 +24,6 @@ $(document).ready(function() {
 	});
 
 
-	$( ".swiper-wrapper" ).append( "<div class='swiper-slide'></div>" );
 });
 
 
