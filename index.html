@@ -176,6 +176,7 @@
                 <img src="17.png" alt="" class="player">
                 <img src="shadow.png" alt="" class="shadow">
             </div>
+     
             
             
         </div>
@@ -188,10 +189,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
 <script type="text/javascript">
     
-    var divs = $(".swiper-slide").get().sort(function(){ 
+    var divs = $(".random").get().sort(function(){ 
       return Math.round(Math.random())-0.5; //random so we get the right +/- combo
     }).slice(3,20)
     $(divs).appendTo(divs[0].parentNode).show();
+    $( ".swiper-wrapper" ).append( "<div class='swiper-slide last'><h2>SPONSOR</h2><p>twoply</p><p>철스짜글이</p><p>cultureplex jang</p><p>박형진공인중개사</p><p>상상헤어샵</p><p>승연종합개발</p></div>" );
+
+    
+
+
 
 
     var swiper = new Swiper('.swiper-container', {

@@ -24,6 +24,11 @@ $(document).ready(function() {
 	});
 
 
+	var pts = $(".last p").get().sort(function(){ 
+      return Math.round(Math.random())-0.5; //random so we get the right +/- combo
+    }).slice(3,20)
+    $(pts).appendTo(pts[0].parentNode).show();
+
 });
 
 

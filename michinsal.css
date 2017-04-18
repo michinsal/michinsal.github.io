@@ -68,6 +68,24 @@ html,body{
         transform: scale(0.8, 0.8);
         filter: blur(2px) grayscale(70%);
     }
+    .swiper-wrapper .swiper-slide.last {
+        color: #fff;
+        text-align: center;
+        background: rgba(255,255,255,0.1);
+    }
+    .swiper-wrapper .swiper-slide.last p{
+        text-align: center;
+    }
+    .swiper-wrapper .swiper-slide.last:after{
+        content: "감사합니다!";
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        font-size: 11px;
+        bottom: -60px;
+    }
+
+
     .swiper-slide img{
     	width: 100%;
     	bottom: 0;
@@ -342,3 +360,22 @@ html,body{
 
 
 }
+
+@media (min-height: 600px) {
+  .shadow {
+      bottom: -40px !important;
+  }
+
+}
+@media (min-height: 680px) {
+  .shadow {
+      bottom: -80px !important;
+  }
+}
+
+
+
+
+
+
+
